@@ -13,9 +13,9 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="400.0">
          <children>
-            <Button fx:id="buttonOne" layoutX="48.0" layoutY="38.0" mnemonicParsing="false" prefWidth="68.0" text="Button1" />
-            <Button layoutX="169.0" layoutY="38.0" mnemonicParsing="false" text="Button2" />
-            <Button fx:id="buttonThree" layoutX="285.0" layoutY="38.0" mnemonicParsing="false" text="Button3" />
+            <Button fx:id="buttonOne" onAction="#clickButton1" layoutX="48.0" layoutY="38.0" mnemonicParsing="false" prefWidth="68.0" text="Button1" />
+            <Button fx:id="buttonTwo" onAction="#clickButton2" layoutX="169.0" layoutY="38.0" mnemonicParsing="false" text="Button2" />
+            <Button fx:id="buttonThree" onAction="#clickButton3" layoutX="285.0" layoutY="38.0" mnemonicParsing="false" text="Button3" />
             <Label fx:id="labelForButtons" layoutX="67.0" layoutY="84.0" prefHeight="89.0" prefWidth="266.0" text="Click the Button" textAlignment="CENTER" />
          </children>
       </Pane>
