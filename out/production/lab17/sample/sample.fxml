@@ -11,12 +11,16 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="200.0" prefWidth="400.0">
+      <Pane prefHeight="200.0" prefWidth="312.0">
          <children>
-            <Button fx:id="buttonOne" onAction="#clickButton1" layoutX="48.0" layoutY="38.0" mnemonicParsing="false" prefWidth="68.0" text="Button1" />
-            <Button fx:id="buttonTwo" onAction="#clickButton2" layoutX="169.0" layoutY="38.0" mnemonicParsing="false" text="Button2" />
-            <Button fx:id="buttonThree" onAction="#clickButton3" layoutX="285.0" layoutY="38.0" mnemonicParsing="false" text="Button3" />
-            <Label fx:id="labelForButtons" layoutX="67.0" layoutY="84.0" prefHeight="89.0" prefWidth="266.0" text="Click the Button" textAlignment="CENTER" />
+            <Button fx:id="calculateButton" layoutX="111.0" layoutY="124.0" mnemonicParsing="false" onAction="#calculateButtonClick" prefHeight="27.0" prefWidth="91.0" text="Calculate" />
+            <Button fx:id="clearButton" layoutX="111.0" layoutY="159.0" mnemonicParsing="false" onAction="#clearButtonClick" prefHeight="27.0" prefWidth="91.0" text="Clear" />
+            <TextField fx:id="aTextField" layoutX="111.0" layoutY="14.0" prefHeight="27.0" prefWidth="91.0" />
+            <TextField fx:id="bTextField" layoutX="111.0" layoutY="50.0" prefHeight="27.0" prefWidth="91.0" />
+            <TextField fx:id="sumTextField" layoutX="111.0" layoutY="87.0" prefHeight="27.0" prefWidth="91.0" />
+            <Label layoutX="79.0" layoutY="19.0" text="a" />
+            <Label layoutX="78.0" layoutY="55.0" text="b" />
+            <Label layoutX="70.0" layoutY="92.0" text="sum" />
          </children>
       </Pane>
    </children>

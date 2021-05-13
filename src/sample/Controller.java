@@ -2,33 +2,34 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class Controller {
     @FXML
-    private Button buttonOne;
+    private Button calculateButton;
 
     @FXML
-    private Button buttonTwo;
+    private Button clearButton;
 
     @FXML
-    private Button buttonThree;
+    private TextField sumTextField;
 
     @FXML
-    private Label labelForButtons;
+    private TextField aTextField;
 
     @FXML
-    private void clickButton1(ActionEvent actionEvent) {
-        labelForButtons.setText("Clicked Button1");
+    private TextField bTextField;
+
+    @FXML
+    private void calculateButtonClick(ActionEvent actionEvent) {
+        int sum = Integer.parseInt(aTextField.getText()) + Integer.parseInt(bTextField.getText());
+        sumTextField.setText("" + sum);
     }
 
     @FXML
-    private void clickButton2(ActionEvent actionEvent) {
-        labelForButtons.setText("Clicked Button2");
-    }
-
-    @FXML
-    private void clickButton3(ActionEvent actionEvent) {
-        labelForButtons.setText("Clicked Button3");
+    private void clearButtonClick(ActionEvent actionEvent) {
+        aTextField.clear();
+        bTextField.clear();
+        sumTextField.clear();
     }
 }
