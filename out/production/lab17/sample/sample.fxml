@@ -13,14 +13,10 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="312.0">
          <children>
-            <Button fx:id="calculateButton" layoutX="111.0" layoutY="124.0" mnemonicParsing="false" onAction="#calculateButtonClick" prefHeight="27.0" prefWidth="91.0" text="Calculate" />
-            <Button fx:id="clearButton" layoutX="111.0" layoutY="159.0" mnemonicParsing="false" onAction="#clearButtonClick" prefHeight="27.0" prefWidth="91.0" text="Clear" />
-            <TextField fx:id="aTextField" layoutX="111.0" layoutY="14.0" prefHeight="27.0" prefWidth="91.0" />
-            <TextField fx:id="bTextField" layoutX="111.0" layoutY="50.0" prefHeight="27.0" prefWidth="91.0" />
-            <TextField fx:id="sumTextField" layoutX="111.0" layoutY="87.0" prefHeight="27.0" prefWidth="91.0" />
-            <Label layoutX="79.0" layoutY="19.0" text="a" />
-            <Label layoutX="78.0" layoutY="55.0" text="b" />
-            <Label layoutX="70.0" layoutY="92.0" text="sum" />
+            <Button fx:id="plusOneButton" layoutX="111.0" layoutY="124.0" mnemonicParsing="false" onAction="#plusOneButtonClick" prefHeight="27.0" prefWidth="91.0" text="+1" />
+            <Button fx:id="minusOneButton" layoutX="111.0" layoutY="159.0" mnemonicParsing="false" onAction="#minusOneButtonClick" prefHeight="27.0" prefWidth="91.0" text="-1" />
+            <TextField fx:id="numTextField" layoutX="111.0" layoutY="73.0" prefHeight="27.0" prefWidth="91.0" text="0" />
+            <Label layoutX="57.0" layoutY="78.0" text="Число" />
          </children>
       </Pane>
    </children>

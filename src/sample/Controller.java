@@ -6,30 +6,33 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     @FXML
-    private Button calculateButton;
+    private Button plusOneButton;
 
     @FXML
-    private Button clearButton;
+    private Button minusOneButton;
 
     @FXML
-    private TextField sumTextField;
+    private TextField numTextField;
 
     @FXML
-    private TextField aTextField;
-
-    @FXML
-    private TextField bTextField;
-
-    @FXML
-    private void calculateButtonClick(ActionEvent actionEvent) {
-        int sum = Integer.parseInt(aTextField.getText()) + Integer.parseInt(bTextField.getText());
-        sumTextField.setText("" + sum);
+    private void plusOneButtonClick(ActionEvent actionEvent) {
+        int number = getNumber();
+        if (number < 3) {
+            number++;
+            numTextField.setText("" + number);
+        }
     }
 
     @FXML
-    private void clearButtonClick(ActionEvent actionEvent) {
-        aTextField.clear();
-        bTextField.clear();
-        sumTextField.clear();
+    private void minusOneButtonClick(ActionEvent actionEvent) {
+        int number = getNumber();
+        if (number > -5) {
+            number--;
+            numTextField.setText("" + number);
+        }
+    }
+
+    private int getNumber() {
+        return Integer.parseInt(numTextField.getText());
     }
 }
